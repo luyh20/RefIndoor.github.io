@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="RefIndoor: An RGB-D Visual Grounding Dataset with Clutterred Indoor Scenes for Robotics.">
+  <meta name="keywords" content="RefIndoor, Visual Grounding, Robot">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RefIndoor: An RGB-D Visual Grounding Dataset with Clutterred Indoor Scenes for Robotics</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+
+
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">RefIndoor: An RGB-D Visual Grounding Dataset with Clutterred Indoor Scenes for Robotics</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Yuhao Lu,</span>
+            <span class="author-block">
+              Yixuan Fan,</span>
+            <span class="author-block">
+              Beixing Deng,
+            </span>
+            <span class="author-block">
+              Fangfu Liu,
+            </span>
+            <span class="author-block">
+              Yali Li,
+            </span>
+            <span class="author-block">
+              Shengjin Wang
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Department of Electronic Engineering, </span>
+            <span class="author-block">Tsinghua University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              
+ 
+              <!-- Video Link. -->
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/luyh20/RefIndoor"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/uc?export=download&id=1-kEfagTovmcbEFG6-C_xatZfFiLWQmiU"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The intelligence and diversity of robot applications have been closely related to the 
+            technical achievements of computer vision and natural language processing fields. 
+            Some current researches of voice interactive robot manipulation attempt to integrate the 
+            visual grounding tasks into the robot operation engine. However, the existing visual grounding 
+            datasets are hard to be used as a suitable practical test bed for robotics because of their low 
+            consistency in the following points: the relevance of instruction language, the practicality of 
+            objects and scenes, and the diversity of ambiguous comparison.
+          </p>
+          <p>
+            In this work, we propose a new challenging visual grounding dataset for robotic perception and
+            reasoning in indoor environments, called RefIndoor. The RefIndoor dataset collects 
+            10,891 real-world RGB images and depth images from cluttered daily life scenes, 
+            and generates 50,758 referring expressions in the form of robot instructions for objects of 
+            these images. Moreover, nearly half of the images contain samples of ambiguity confrontation. 
+            Experiments demonstrate the availability and reasonability  of the RefIndoor. 
+            And the RefIndoor is potential and promising to provide a research basis for 
+            the visual grounding with 3D data or scene adaptation.
+          </p>
+          <p>
+            We hope to provide a distinctive training bed of visual grounding tasks
+            for the robot community and the computer vision community.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Datasheets. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Datasheets for the RefIndoor</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            The RefIndoor comprises RGB images, depth images, expressions, masks, bounding boxes.
+            Each RGB image corresponds to a depth image, and multiple expressions, masks, bounding boxes. 
+            Each expression describes an object in the image and corresponds one mask and one bounding box.
+          </p>
+          <p>
+            The RefIndoor comprises 10,891 RGB-D images and 50,758 language expressions. 
+            There are 204 instances of objects involving 66 categories. These objects present at the images as the targets.
+            You can understand these objects more clearly by the
+            <a href="https://arxiv.org/abs/2104.09125">Object list.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Datasheets. -->
+
+    <!-- Formats. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Data Formats</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Download the RefIndoor! Unzip the file in RefIndoor/data/final_dataset/. There are train set, testA set and testB set.
+          </p>
+          <p>
+            Each json file describe the full information to load instances of these sets.
+            The json files contains:
+            <ol>
+            <li>"num", the number of the instance.
+            <li>"text", the referring expression of the instance to describe the instance.
+            <li>"bbox", the vertex coordinates of the upper left corner and the vertex coordinates of the lower right corner of the bounding box of the instance.
+            <li>"rgb_path", the path of related RGB image for the text. For example, "final_dataset\\train\\image\\0000000.png".
+            <li>"depth_path", the path of related depth image for the text. For example, "final_dataset\\train\\depth\\0000000.png".
+            <li>"mask_path", the path of related mask image for the text. For example, "final_dataset\\train\\mask\\0000000.png".
+            <li>"scene", the scene type of the image.
+            <li>"class", the object type of the instance.
+            </ol>
+          </p>
+          <p>
+            Moreover, there is a "depth_colormap" file, which store corresponding color map of the depth image.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Formats. -->
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
